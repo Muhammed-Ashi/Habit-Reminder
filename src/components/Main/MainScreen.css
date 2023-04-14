@@ -1,0 +1,48 @@
+.card:hover  .edit_button {
+  display: block;
+}
+
+.card {
+    width: 12rem;
+    border-color: "#00997a";
+    display: flex;
+    align-items: center;
+    
+}
+.edit_button{
+    display: flex;
+    justify-content: center;
+     display: none;
+    position: absolute;
+    top: 4%;
+    ;
+}
+.add_button_container {
+  color: white;
+  background-color:#00997a ;
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  border-radius:20% ;
+
+}
+  .Add_Button {
+     width: 80px;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+    
+     
+  }
+
+  @media only screen  and (max-width:600px) {
+  .add_button_container {
+ 
+    position: relative;
+    top: 0.5px;
+    left: 150px;
+    bottom: 300px;
+    
+
+  }
+   }
