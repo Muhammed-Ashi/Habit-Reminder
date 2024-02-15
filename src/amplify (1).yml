@@ -6,9 +6,9 @@ applications:
       commands:
         - npm run build
       artifacts:
-        baseDirectory: Build
+        baseDirectory: public
         files:
           - '**/*'
       cache:
         paths: []
-    appRoot: src
+    appRoot: public
