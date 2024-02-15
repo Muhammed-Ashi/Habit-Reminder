@@ -1,14 +1,19 @@
 version: 1
-applications:
-  - frontend:
-      phases:
-        build:
+frontend:
+  buildpath:
+  phases:
+    preBuild:
+      commands:
+        - npm install
+    build:
       commands:
         - npm run build
-      artifacts:
-        baseDirectory: public
-        files:
-          - '**/*'
-      cache:
-        paths: []
-    appRoot: public
+  artifacts:
+    baseDirectory: build
+  cache:
+    paths:
+        - node_modules/**/*
+
+  artifacts:
+ 
+    baseDirectory: src
