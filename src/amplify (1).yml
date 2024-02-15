@@ -9,11 +9,9 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: build
+    baseDirectory: public
   cache:
     paths:
         - node_modules/**/*
 
-  artifacts:
  
-    baseDirectory: build
