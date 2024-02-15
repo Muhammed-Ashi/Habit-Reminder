@@ -16,4 +16,4 @@ frontend:
 
   artifacts:
  
-    baseDirectory: src
+    baseDirectory: build
