@@ -3,9 +3,10 @@ applications:
   - frontend:
       phases:
         build:
-          commands: []
+      commands:
+        - npm run build
       artifacts:
-        baseDirectory: /src
+        baseDirectory: src
         files:
           - '**/*'
       cache:
